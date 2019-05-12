@@ -30,6 +30,8 @@
   </div>
 </div>
 
+<script src="/assets/js/dashboard.js?version=1"></script>
+
 </body>
 
 </html>

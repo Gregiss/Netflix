@@ -24,7 +24,7 @@ body,html{
 
 .apresent{
     width: 100%;
-    height: 49vw;
+    height: 100%;
     background: var(--body);
     background-image: url('/assets/img/large_back.jpg');
     background-size: var(--cover);
@@ -41,13 +41,15 @@ body,html{
 }
 
 .apresent .logo{
-    width: 12.1vw;
-    height: 3.3vw;
+    width: 440px;
+    height: 120px;
     background-image: url('/assets/img/logo.png');
     background-size: cover;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 50%);
+    position: relative;
+    margin: 0px auto;
+    top: 25px;
+    transform: scale(0.4);
+    left: -15px;
     cursor: pointer;
 }
 
@@ -71,6 +73,7 @@ body,html{
     -moz-border-radius: 3px;
     border-radius: 3px;
     font-size: 16px;
+    top: 0px;
 }
 
 .apresent .right button:hover{
@@ -87,12 +90,16 @@ body,html{
 }
 
 .apresent .apresent_bo h1{
-    font-size: 3vw;
+    font-size: 2.3em;
+}
+
+.apresent .apresent_bo h2{
+    font-size: 1.5em;
 }
 
 .apresent .apresent_bo button{
     position: relative;
-    width: 27vw;
+    width: calc(80% - 40px);
     top: 2vw;
     border: none;
     color: #fff;
@@ -104,7 +111,7 @@ body,html{
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
-    font-size: 1.5em;
+    font-size: 1.3em;
     transform: scale(1.1);
 }
 
