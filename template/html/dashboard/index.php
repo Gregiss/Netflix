@@ -17,7 +17,19 @@
 </head>
 
 <body>
-<h1>teste</h1>
+
+<div class="apresent">
+  <div class="logo"></div>
+  <div class="right">
+    <button>Entrar</button>
+  </div>
+  <div class="apresent_bo">
+    <h1>Sua próxima história, agora.</h1>
+    <h2>ASSISTA ONDE QUISER. CANCELE QUANDO QUISER.</h2>
+    <button>ASSISTA GRÁTIS POR 30 DIAS</button>
+  </div>
+</div>
+
 </body>
 
 </html>
