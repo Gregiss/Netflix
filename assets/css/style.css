@@ -1,0 +1,13 @@
+@import url("normalize.css");
+
+:root{
+    --body: #151515;
+    --black: #000;
+    --white: #fff;
+}
+
+body,html{
+    background: var(--black);
+    font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;
+    color: var(--white);
+}
