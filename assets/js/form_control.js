@@ -13,13 +13,13 @@ $("input").keyup(function(){
         if(val == ""){
             blank(data, "Informe um e-mail valido");
         } else{
-            noblank(data);
+            notblank(data);
         }
     } else if(data == "senha"){
         if(val == ""){
             blank(data, "Preencha o campo senha");
         } else{
-            noblank(data);
+            notblank(data);
         }
     }
 });
