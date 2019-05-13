@@ -26,7 +26,7 @@ require 'php/database.php';
 $PDO = db_connect();
 $iduser = $_COOKIE['iduser'];
 $cry = $_COOKIE['cry'];
-$sql = "SELECT id, idnetflix, email, username FROM users WHERE id = :iduser AND idnetflix = :idnetflix";
+$sql = "SELECT id, idnetflix, email FROM users WHERE id = :iduser AND idnetflix = :idnetflix";
 $stmt = $PDO->prepare($sql);
 $stmt->bindParam(':iduser', $iduser);
 $stmt->bindParam(':idnetflix', $cry);
