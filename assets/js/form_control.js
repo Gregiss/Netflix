@@ -63,6 +63,14 @@ $("#go").click(function(){
                 error = 'Aguarde um momento';
                 location.reload();
              }
+             else if(data == 'existe'){
+                $(".errorfixed").show();
+                error = 'Já existe esse e-mail';
+             }
+             else{
+                $(".errorfixed").show();
+                error = 'Ocorreu algum erro';
+             }
              $(".errorfixed").html(error);
          }
          , "html");
