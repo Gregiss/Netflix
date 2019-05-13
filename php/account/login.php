@@ -15,7 +15,7 @@ if (empty($email) || empty($password))
 }
  
 // cria o hash da senha
-$passwordHash = make_hash($password);
+$passwordHash = sha1($password);
  
 $PDO = db_connect();
  
@@ -41,5 +41,5 @@ else{
     // pega o primeiro usuário
     $user = $users[0];
     setcookie("iduser", $user['id']);
-    setcookie("cry", $user['cry']);
+    setcookie("cry", $user['idnetflix']);
 }

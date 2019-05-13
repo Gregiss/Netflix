@@ -20,3 +20,22 @@ if(isset($_COOKIE['iduser']) && isset($_COOKIE['cry'])){
     }
 }
 }
+ 
+if(isset($_COOKIE['iduser']) && isset($_COOKIE['idnetflix'])){
+require '../database.php';
+$PDO = db_connect();
+$iduser = $_COOKIE['iduser'];
+$cry = $_COOKIE['cry'];
+$sql = "SELECT id, idnetflix, email, username FROM users WHERE id = :iduser AND cry = :cry";
+$stmt = $PDO->prepare($sql);
+$stmt->bindParam(':iduser', $iduser);
+$stmt->bindParam(':cry', $cry);
+$stmt->execute();
+$users = $stmt->fetchAll(PDO::FETCH_ASSOC);
+if (count($users) <= 0)
+{
+setcookie("iduser", "");
+setcookie("cry", "");
+}
+$user = $users[0];
+}
