@@ -24,6 +24,24 @@ $("input").keyup(function(){
     }
 });
 
+$("input").click(function(){
+    var data = $(this).data("input");
+    var val = $(this).val();
+    if(data == "email"){
+        if(val == ""){
+            blank(data, "Informe um e-mail valido");
+        } else{
+            notblank(data);
+        }
+    } else if(data == "senha"){
+        if(val == ""){
+            blank(data, "Preencha o campo senha");
+        } else{
+            notblank(data);
+        }
+    }
+});
+
 function blank(data, errorb){
     var input = "#" + data;
     var error = "#error" + data;
