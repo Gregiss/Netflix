@@ -1,6 +1,6 @@
 <div class="tabs" id="login">
 <div class="apresent">
-  <div class="logo"></div>
+  <a href="/"><div class="logo"></div></a>
   <div class="login">
     <h1>Entrar</h1>
     <div class="input" data-input="email">
