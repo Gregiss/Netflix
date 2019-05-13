@@ -2,4 +2,5 @@ ErrorDocument 404 /template/html/error/404.php
 <IfModule mod_rewrite.c>
   RewriteEngine On
 RewriteRule ^login/?$ index.php?account=1 [NC,L]
+RewriteRule ^registro/?$ index.php?registro=2 [NC,L]
 </IfModule>

@@ -2,7 +2,7 @@
 <div class="apresent">
   <a href="/"><div class="logo"></div></a>
   <div class="login">
-    <h1>Entrar</h1>
+    <h1>Registrar</h1>
     <form>
     <div class="input" data-input="email">
     <span class="label" id="labelemail">E-mail</span>
@@ -15,10 +15,10 @@
     <span id="errorsenha" class="error"></span>
     </div>
 
-    <button>Entrar</button>
+    <button>Registrar</button>
 </form>
   </div>
 </div>
 </div>
 
-<script src="/assets/js/form_control_login.js"></script>
+<script src="/assets/js/form_control.js"></script>

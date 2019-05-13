@@ -12,6 +12,9 @@ if(isset($_COOKIE['iduser']) && isset($_COOKIE['cry'])){
 } else{
     if($_GET['account']){
         template('dashboard/account', 'login');
+    }
+    else if($_GET['registro']){
+        template('dashboard/account', 'registro');
     } else{
     template('dashboard', 'index');
     }
