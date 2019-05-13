@@ -20,6 +20,10 @@ body,html{
     background: var(--black);
     font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;
     color: var(--white);
+    transition-property: all;
+    transition-duration: 0.1s;
+    transition-timing-function: linear;
+    transition-delay: 0.01s;
 }
 
 .apresent{

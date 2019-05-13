@@ -3,6 +3,7 @@
   <a href="/"><div class="logo"></div></a>
   <div class="login">
     <h1>Entrar</h1>
+    <form>
     <div class="input" data-input="email">
     <span class="label" id="labelemail">E-mail</span>
     <input id="email" type="text" data-input="email">
@@ -15,6 +16,7 @@
     </div>
 
     <button>Entrar</button>
+</form>
   </div>
 </div>
 </div>
