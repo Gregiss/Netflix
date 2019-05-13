@@ -3,4 +3,6 @@ ErrorDocument 404 /template/html/error/404.php
   RewriteEngine On
 RewriteRule ^login/?$ index.php?account=1 [NC,L]
 RewriteRule ^registro/?$ index.php?registro=2 [NC,L]
+RewriteRule ^logando/?$ php/account/login.php [NC,L]
+RewriteRule ^registrando/?$ php/account/register.php [NC,L]
 </IfModule>

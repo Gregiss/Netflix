@@ -6,6 +6,8 @@ var LabelLeftFocus = 18;
 var LabelSizeFocus = 0.9;
 var AnteriorInput;
 
+$(".errorfixed").hide();
+
 $("input").keyup(function(){
     var data = $(this).data("input");
     var val = $(this).val();
@@ -40,6 +42,31 @@ $("input").click(function(){
             notblank(data);
         }
     }
+});
+
+$("#go").click(function(){
+    var email = $("#email").val();
+    var senha = $("#senha").val();
+    var error = '';
+    $.post("/logando", {email: email, password: senha},
+        function(data){
+             if(data == "campos"){
+                 $(".errorfixed").show();
+                error = 'Preencha os campos';
+             }
+             else if(data == 'senha'){
+                $(".errorfixed").show();
+                 error = 'Email ou senha invalidos';
+             }
+             else if(data == 'sucess'){
+                $(".errorfixed").hide();
+                error = 'Aguarde um momento';
+                location.reload();
+             }
+             $(".errorfixed").html(error);
+         }
+         , "html");
+         return false;
 });
 
 function blank(data, errorb){

@@ -2,6 +2,7 @@
 <div class="apresent">
   <a href="/"><div class="logo"></div></a>
   <div class="login">
+    <div class="errorfixed"></div>
     <h1>Registrar</h1>
     <form>
     <div class="input" data-input="email">
@@ -15,7 +16,7 @@
     <span id="errorsenha" class="error"></span>
     </div>
 
-    <button>Registrar</button>
+    <button id="go">Registrar</button>
 </form>
 
     <div class="foot">
