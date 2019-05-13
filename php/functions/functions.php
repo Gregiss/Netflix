@@ -21,6 +21,8 @@ if(isset($_COOKIE['iduser']) && isset($_COOKIE['cry'])){
 }
 }
  
+
+//Verificar sessão quando logado
 if(isset($_COOKIE['iduser']) && isset($_COOKIE['cry'])){
 require 'php/database.php';
 $PDO = db_connect();

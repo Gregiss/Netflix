@@ -19,11 +19,11 @@ $passwordHash = sha1($password);
  
 $PDO = db_connect();
  
-$sql = "SELECT id, idnetflix, email FROM users WHERE email = :email AND password = :password";
+$sql = "SELECT id, idnetflix, email FROM users WHERE email = :email AND senha = :senha";
 $stmt = $PDO->prepare($sql);
  
 $stmt->bindParam(':email', $email);
-$stmt->bindParam(':password', $passwordHash);
+$stmt->bindParam(':senha', $passwordHash);
  
 $stmt->execute();
  
