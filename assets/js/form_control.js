@@ -33,5 +33,7 @@ function blank(data, errorb){
 
 function notblank(data){
     var input = "#" + data;
+    var error = "#error" + data;
     $(input).css("border-bottom", "0px solid transparent");
+    $(error).html("")
 }
