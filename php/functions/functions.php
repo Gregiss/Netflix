@@ -10,10 +10,10 @@ function payload(){
 if(isset($_COOKIE['iduser']) && isset($_COOKIE['cry'])){
     template('home', 'index');
 } else{
-    if($_GET['account']){
+    if(isset($_GET['account'])){
         template('dashboard/account', 'login');
     }
-    else if($_GET['registro']){
+    else if(isset($_GET['registro'])){
         template('dashboard/account', 'registro');
     } else{
     template('dashboard', 'index');
