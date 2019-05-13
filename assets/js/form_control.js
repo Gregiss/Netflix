@@ -6,6 +6,9 @@ var LabelLeftFocus = 18;
 var LabelSizeFocus = 0.9;
 var AnteriorInput;
 
+var passoEmail = 0;
+var passoSenha = 0;
+
 $(".errorfixed").hide();
 
 $("input").keyup(function(){
@@ -48,6 +51,7 @@ $("#go").click(function(){
     var email = $("#email").val();
     var senha = $("#senha").val();
     var error = '';
+    if(passoEmail === 1 && passoSenha === 1){
     $.post("/registrando", {email: email, password: senha},
         function(data){
              if(data == "campos"){
@@ -74,6 +78,11 @@ $("#go").click(function(){
              $(".errorfixed").html(error);
          }
          , "html");
+        } else{
+            $(".errorfixed").show();
+            error = 'E-mail está invalido ou senha é fraca demais';
+            $(".errorfixed").html(error);
+        }
          return false;
 });
 
@@ -109,6 +118,7 @@ function checarEmail(data){
             $(input).css("border-bottom", "3px solid green");
             $(error).css("color", "green");
             $(error).html("Opa, esse e-mail é válido :)");
+            passoEmail = 1;
         }
     }
 
@@ -146,9 +156,11 @@ function checarEmail(data){
             $(senhab).css("border-bottom", "3px solid green");
             $(error).css("color", "green");
             $(error).html('Eba sua senha está excelente');
+            passoSenha = 1;
         }else{
             $(senhab).css("border-bottom", "3px solid green");
             $(error).css("color", "green");
             $(error).html('Eba sua senha está forte');
+            passoSenha = 1;
         }
     }

@@ -4,7 +4,6 @@
     --body: #151515;
     --black: #000;
     --white: #fff;
-    --cover: cover;
 }
 
 button,input{
@@ -31,7 +30,7 @@ body,html{
     height: 100%;
     background: var(--body);
     background-image: url('/assets/img/large_back.jpg');
-    background-size: var(--cover);
+    background-size: cover;
 }
 
 .apresent::before{
@@ -51,7 +50,7 @@ body,html{
     background-size: cover;
     position: relative;
     margin: 0px auto;
-    top: 25px;
+    top: 0px;
     transform: scale(0.4);
     left: -15px;
     cursor: pointer;
