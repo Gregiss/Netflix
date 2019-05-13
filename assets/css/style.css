@@ -203,3 +203,19 @@ body,html{
     font-size: 1.3em;
     left: 0px;
 }
+
+.foot{
+    color: #fff;
+    position: relative;
+    top: 70px;
+  }
+
+  .foot a{
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+  }
+
+  .foot a:hover{
+      text-decoration: underline;
+  }

@@ -17,6 +17,10 @@
 
     <button>Entrar</button>
 </form>
+    <div class="foot">  
+      <a style="color: #fff;" href="/registro">Criar uma conta</a>
+      <a href="/forgot" style="color: #fff;">Esqueci minha senha</a>
+    </div>
   </div>
 </div>
 </div>
