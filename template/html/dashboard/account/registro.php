@@ -19,7 +19,7 @@
 </form>
 
     <div class="foot">
-      <a style="color: #fff;" href="/registro">Já tenho uma conta</a>
+      <a style="color: #fff;" href="/login">Já tenho uma conta</a>
     </div>
   </div>
 </div>
