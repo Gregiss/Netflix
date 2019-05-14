@@ -367,6 +367,7 @@ body,html{
 #gerenciart2{
     position: absolute;
     left: 200%;
+    top: 50%;
     transition-property: all;
     transition-duration: 1s;
     transition-timing-function: cubic-bezier(0.84, -0.17, 0, 1.21);

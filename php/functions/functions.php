@@ -9,8 +9,12 @@ function template($dir, $file){
 function payload(){
 if(isset($_COOKIE['iduser']) && isset($_COOKIE['cry'])){
     if(empty($_COOKIE['profile'])){
+        if($_GET['ManageProfiles']){
+        template('home', 'gerenciar');
+        } else{
         template('home', 'profiles');
-    }
+        }
+    } 
     template('home', 'index');
 } else{
     if(isset($_GET['account'])){

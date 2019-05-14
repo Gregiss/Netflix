@@ -24,7 +24,12 @@
 
 </div>
 
-<?php require 'gerenciar.php';?>
+<?php 
+if(isset($_GET['ManageProfiles'])){
+    $no = 1;
+} else{
+require 'gerenciar.php';
+}?>
 
 <div style="padding-bottom: 5vw;"></div>
 
