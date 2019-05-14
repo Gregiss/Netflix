@@ -1,4 +1,4 @@
-<div class="profiles">
+<div class="profiles" id="escolher">
 
 
 <div class="listprofile">
@@ -15,7 +15,7 @@
 <?php }?>
 
 <div>
-<button>Gerenciar perfis</button>
+<button id="gerenciar">Gerenciar perfis</button>
 </div>
 
 </center>
@@ -23,6 +23,8 @@
 </div>
 
 </div>
+
+<?php require 'gerenciar.php';?>
 
 <div style="padding-bottom: 5vw;"></div>
 
