@@ -239,20 +239,31 @@ body,html{
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    width: 100%;
+    overflow: auto;
+    height: 100%;
+}
+
+.listprofile{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
     width: 80%;
 }
 
 .profiles h1{
-    font-size: 3.4em;
+    font-size: 3vw;
 }
 
 .profiles .profile{
-    width: 180px;
-    height: 180px;
+    width: 9vw;
+    height: 9vw;
     background: #555;
-    border-radius: 3px;
-    border: 4px solid rgba(0,0,0,.45);
-    margin-top: 50px;
+    border-radius: 0.3vw;
+    border: 0.3vw solid rgba(0,0,0,.45);
+    margin-top: 1vw;
     display: inline-block;
     transition-property: all;
     transition-duration: 0.4s;
@@ -265,35 +276,75 @@ body,html{
 }
 
 .profiles .profile:hover{
-    border: 4px solid #fff;
+    border: 0.3vw solid #fff;
     color: #fff;
 }
 
 .profiles .profile span{
     position: relative;
-    top: 190px;
+    top: 10vw;
     left: 0px;
-    font-size: 1.4em;
+    font-size: 1.4vw;
 }
 
 .profiles button{
-    width: 300px;
+    width: 15vw;
     position: relative;
-    top: 150px;
-    padding: 20px;
+    top: 10vw;
+    padding: 1vw;
     background: transparent;
     color: grey;
-    border: 3px solid grey;
-    font-size: 1.3em;
+    border: 0.2vw solid grey;
+    font-size: 1vw;
     text-transform: uppercase;
     transform: scale(0.9);
+    margin: 0px auto;
 }
 
 .profiles button:hover{
-    border: 3px solid #fff;
+    border: 0.2vw solid #fff;
     color: #fff;
     transition-property: all;
     transition-duration: 0.7s;
     transition-timing-function: cubic-bezier(0.84, -0.17, 0, 1.21);
     transition-delay: 0.01s;
+}
+
+
+@media screen and (max-width: 1200px) {
+    
+    .profiles h1{
+        font-size: 9vw;
+    }
+
+	.profiles .profile{
+        width: 20vw;
+        height: 20vw;
+        margin-left: 5vw;
+        margin-top: 12vw;
+        border: 0.6vw solid rgba(0,0,0,.45);
+        left: -3vw;
+        top: -4vw;
+    }
+
+    .profiles .profile:hover{
+        border: 0.6vw solid #fff;
+    }
+    
+    .profiles .profile span{
+        font-size: 4vw;
+        top: 21vw;
+    }
+
+    .profiles button{
+        width: 40vw;
+        font-size: 5vw;
+        border: 0.6vw solid grey;
+        top: 15vw;
+    }
+
+    .profiles button:hover{
+        border: 0.6vw solid #fff;
+    }
+
 }

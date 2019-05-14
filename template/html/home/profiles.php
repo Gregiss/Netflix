@@ -1,8 +1,9 @@
 <div class="profiles">
 
-<h1>Quem está assistindo?</h1>
 
 <div class="listprofile">
+
+<h1>Quem está assistindo?</h1>
 
 <center>
 <?php for($i = 0; $i < 5; $i++){?>
@@ -22,6 +23,8 @@
 </div>
 
 </div>
+
+<div style="padding-bottom: 5vw;"></div>
 
 <style>
 body,html{
